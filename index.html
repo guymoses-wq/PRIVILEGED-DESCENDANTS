@@ -122,11 +122,6 @@
         .nav-links a:hover {
             color: var(--primary-accent);
         }
-        .user-icon {
-            font-size: 1.2rem;
-            color: var(--text-dark);
-            cursor: pointer;
-        }
 
         /* Hero Header Section */
         .hero-main {
@@ -235,6 +230,46 @@
         .action-prompt a {
             color: #60a5fa;
             text-decoration: none;
+        }
+
+        /* Full About Section Expanded */
+        .about-expanded-section {
+            padding: 5rem 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .about-expanded-section h2 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .about-expanded-section p {
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .about-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        .about-card h4 {
+            color: var(--primary-accent);
+            font-size: 1.25rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
         }
 
         /* Footer Section */
@@ -414,7 +449,7 @@
         }
 
         @media (max-width: 900px) {
-            .content-section, .contact-grid, .footer-layout {
+            .content-section, .contact-grid, .footer-layout, .about-grid {
                 grid-template-columns: 1fr;
             }
             .nav-links {
@@ -437,7 +472,6 @@
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
-            <div class="user-icon" onclick="openModal('privacyModal')" title="Account / Info">👤</div>
         </div>
     </header>
 
@@ -467,6 +501,29 @@
         </div>
     </section>
 
+    <!-- Full Detailed About Us Section -->
+    <section id="about" class="about-expanded-section">
+        <h2>About Privileged Descendants</h2>
+        <p>Founded with a deep commitment to historical preservation, cultural continuity, and community upliftment, <strong>Privileged Descendants</strong> operates as an officially registered 501(c)(3) non-profit organization under federal guidelines (EIN: 81-1764330). Headquartered at 216 Gipple St, Bloomsburg PA 17815, our organization serves as a dynamic bridge connecting ancestral heritage with modern community development.</p>
+        
+        <p>Our work centers on empowering individuals and families through targeted educational programs, archival documentation, and collaborative civic engagement. We understand that honoring our collective roots requires active stewardship, transparent governance, and an unwavering dedication to educational equity across all demographic lines.</p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h4>Our Mission</h4>
+                <p>To preserve historical legacies, safeguard cultural histories, and provide comprehensive educational and developmental resources that empower communities to build resilient, self-sufficient futures.</p>
+            </div>
+            <div class="about-card">
+                <h4>Our Vision</h4>
+                <p>A thriving, connected society where historical awareness, cultural education, and mutual support serve as foundational pillars for lifelong community advancement and leadership.</p>
+            </div>
+            <div class="about-card">
+                <h4>Core Principles</h4>
+                <p>Uncompromising cultural stewardship, complete operational transparency, strict confidentiality, and inclusive community engagement across all public and charitable initiatives.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Dark Bottom Banner Section -->
     <section class="dark-banner">
         <div class="dark-banner-container">
@@ -475,14 +532,6 @@
             <div class="action-prompt">
                 <strong>Action Prompt:</strong> Reach out to our administrative team today at <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a> to update your profile, inquire about upcoming membership opportunities, or learn how you can support our tax-deductible 501(c)(3) community initiatives.
             </div>
-        </div>
-    </section>
-
-    <!-- Additional Impact Section -->
-    <section class="section" style="text-align: center; background: var(--light-bg); max-width: 100%;">
-        <div style="max-width: 1100px; margin: 0 auto;">
-            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Strengthening Our Neighborhoods Through Unity</h2>
-            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem; font-size: 1.05rem;">A community thrives when its members refuse to remain passive observers. Privileged Descendants actively partners with regional volunteers, civic organizations, and local leaders to address grassroots needs and support charitable causes.</p>
         </div>
     </section>
 
@@ -564,7 +613,7 @@
     </footer>
 
     <!-- POLICY MODALS -->
-    <!-- Privacy Policy Modal -->
+    <!-- Full Privacy Policy Modal -->
     <div id="privacyModal" class="modal-page">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
@@ -575,26 +624,39 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Privileged Descendants ("we," "our," or "us") operates the website <code>privilegeddescendants.bond</code>. We are deeply committed to protecting the privacy and confidentiality of our visitors, participants, and supporters.</p>
+                <p>Privileged Descendants ("we," "our," or "us") operates the official website <code>privilegeddescendants.bond</code>. We are deeply committed to protecting the privacy, security, and confidentiality of all visitors, participants, donors, and community supporters who interact with our 501(c)(3) organization.</p>
+                
                 <h3>1. Information We Collect</h3>
-                <p>We collect personal information that you voluntarily provide to us when contacting us, requesting assistance, or interacting with our organization. This includes:</p>
+                <p>We collect personal information that you voluntarily provide to us when communicating with our administrative team, registering for programs, or submitting inquiries through our website. This includes:</p>
                 <ul>
-                    <li><strong>Contact Details:</strong> Your name, email address (e.g., <code>query@privilegeddescendants.bond</code>), phone number, and physical mailing address.</li>
-                    <li><strong>Technical Data:</strong> Non-identifying IP addresses, browser types, and access logs collected automatically to preserve website security.</li>
+                    <li><strong>Contact Details:</strong> Your full name, email address (such as <code>query@privilegeddescendants.bond</code>), telephone number, and physical mailing address.</li>
+                    <li><strong>Correspondence Data:</strong> Questions, feedback, or documentation submitted via direct email or web contact forms.</li>
+                    <li><strong>Technical Data:</strong> Non-identifying IP addresses, browser types, device specifications, and server access logs collected automatically to safeguard website security and optimize performance.</li>
                 </ul>
+
                 <h3>2. How We Use Your Information</h3>
-                <p>Privileged Descendants uses collected information strictly for legitimate organizational purposes:</p>
+                <p>Privileged Descendants utilizes collected information strictly for legitimate charitable and organizational purposes:</p>
                 <ul>
-                    <li>To communicate directly regarding program updates, community news, or events.</li>
-                    <li>To comply with federal 501(c)(3) compliance and tax-reporting regulations.</li>
+                    <li>To respond directly to inquiries, support requests, and community correspondence.</li>
+                    <li>To coordinate educational workshops, historical archiving projects, and community outreach events.</li>
+                    <li>To maintain accurate administrative records and comply fully with federal 501(c)(3) tax-reporting and regulatory requirements.</li>
                 </ul>
-                <h3>3. Confidentiality</h3>
-                <p><strong>Privileged Descendants does not sell, rent, lease, or trade personal data or donor information to any third parties under any circumstances.</strong></p>
+
+                <h3>3. Confidentiality and Data Protection</h3>
+                <p>We maintain strict administrative, physical, and technical safeguards. <strong>Privileged Descendants does not sell, rent, lease, or trade personal data or donor information to any third parties under any circumstances.</strong> Information is shared solely with trusted service providers bound by strict confidentiality obligations who directly support our digital operations and website infrastructure.</p>
+
+                <h3>4. Policy Updates and Contact Information</h3>
+                <p>We may update this Privacy Policy periodically to reflect organizational improvements or statutory changes. If you have any questions regarding this policy or wish to review, update, or remove your personal data, please contact our administrative team at:</p>
+                <p>
+                    <strong>Privileged Descendants</strong><br>
+                    216 Gipple St, Bloomsburg PA 17815, United States<br>
+                    Email: <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a>
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Terms of Use Modal -->
+    <!-- Full Terms of Use Modal -->
     <div id="termsModal" class="modal-page">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
@@ -605,11 +667,22 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Welcome to <code>privilegeddescendants.bond</code>. By accessing or using this website, you agree to be bound by these full Terms of Use and all applicable laws and regulations.</p>
+                <p>Welcome to <code>privilegeddescendants.bond</code>. By accessing, browsing, or utilizing this website, you explicitly agree to be bound by these full Terms of Use and all applicable local, state, and federal laws and regulations.</p>
+
                 <h3>1. Non-Profit Status and Purpose</h3>
-                <p>Privileged Descendants is a registered 501(c)(3) non-profit organization operating under Employer Identification Number (EIN) 81-1764330. This website is created and operated solely for non-profit charitable, informational, and community heritage purposes.</p>
-                <h3>2. Acceptable Use</h3>
-                <p>Users agree to use this site strictly for lawful purposes. You agree not to attempt unauthorized system access or use official contacts (such as <code>query@privilegeddescendants.bond</code>) for unauthorized advertising or spam.</p>
+                <p>Privileged Descendants is a duly registered 501(c)(3) non-profit organization operating under Employer Identification Number (EIN) 81-1764330, with our principal office located at 216 Gipple St, Bloomsburg PA 17815. This website is established and operated exclusively for charitable, educational, historical preservation, and community assistance purposes.</p>
+
+                <h3>2. Acceptable Use Policy</h3>
+                <p>Users agree to utilize this website strictly for lawful, non-commercial purposes. You agree not to submit fraudulent inquiries, engage in automated data scraping, attempt unauthorized access to our digital systems, or misuse official contact channels (such as <code>query@privilegeddescendants.bond</code>) for unsolicited advertising, harassment, or spam.</p>
+
+                <h3>3. Intellectual Property Rights</h3>
+                <p>All text, graphics, logos, images, design elements, and downloadable content featured on <code>privilegeddescendants.bond</code> are the intellectual property of Privileged Descendants or its content contributors and are protected by United States and international copyright laws. Unauthorized reproduction, modification, distribution, or republication of any material without express written consent is strictly prohibited.</p>
+
+                <h3>4. Limitation of Liability</h3>
+                <p>Privileged Descendants provides the information on this website on an "as is" and "as available" basis without warranties of any kind, either express or implied. The organization shall not be held liable for any direct, indirect, incidental, or consequential damages arising out of or in connection with the use of this website or reliance on its content.</p>
+
+                <h3>5. Contact Information</h3>
+                <p>For any questions or concerns regarding these Terms of Use, please reach out via email at <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a> or write to us at 216 Gipple St, Bloomsburg PA 17815.</p>
             </div>
         </div>
     </div>
@@ -625,9 +698,16 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Privileged Descendants is committed to a policy of equal opportunity and nondiscrimination in all its programs, services, activities, and staffing.</p>
-                <h3>1. Equal Access</h3>
-                <p>We do not discriminate on the basis of race, color, religion, gender, gender expression, age, national origin, disability, marital status, sexual orientation, or military status in any of our activities or operations.</p>
+                <p>Privileged Descendants champions a strict policy of equal opportunity, inclusion, and nondiscrimination across all of our programs, community outreach efforts, archival services, events, volunteer selections, and staffing decisions.</p>
+
+                <h3>1. Equal Access and Opportunity</h3>
+                <p>In accordance with federal 501(c)(3) guidelines and our core values, Privileged Descendants does not discriminate, exclude, or treat individuals differently on the basis of race, color, religion, creed, gender, gender expression, age, national origin or ancestry, disability, marital status, sexual orientation, military or veteran status, or any other legally protected status in any of our operations or activities.</p>
+
+                <h3>2. Scope of Policy</h3>
+                <p>This steadfast nondiscrimination commitment applies universally to the delivery of educational workshops, historical resources, public community events, and the recruitment of staff and volunteers.</p>
+
+                <h3>3. Contact</h3>
+                <p>To submit feedback or inquiries regarding our nondiscrimination practices, please contact our compliance team at <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a>.</p>
             </div>
         </div>
     </div>
