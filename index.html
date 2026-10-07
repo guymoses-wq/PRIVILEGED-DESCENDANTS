@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privileged Descendants | Preserving Heritage & Empowering Communities</title>
-    <meta name="description" content="Privileged Descendants (EIN: 81-1764330) champions heritage education, community empowerment, and historical preservation. Official domain: privilegeddescendants.bond.">
+    <meta name="description" content="Privileged Descendants (EIN: 81-1764330) is a dedicated 501(c)(3) nonprofit organization uniting generations to foster connection, historical preservation, and community empowerment in Bloomsburg, Pennsylvania. Official domain: privilegeddescendants.bond.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Global site tag (gtag.js) - Google Ads -->
@@ -61,7 +61,7 @@
         body {
             font-family: 'Outfit', sans-serif;
             color: var(--text-main);
-            background-color: var(--light-bg);
+            background-color: #ffffff;
             line-height: 1.7;
         }
         h1, h2, h3, h4 {
@@ -69,26 +69,13 @@
             color: var(--text-dark);
             letter-spacing: -0.02em;
         }
-        /* Top Compliance Banner */
-        .top-banner {
-            background-color: var(--secondary);
-            color: #f1f5f9;
-            font-size: 0.85rem;
-            padding: 10px 5%;
-            text-align: center;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-        }
-        .top-banner strong {
-            color: #60a5fa;
-        }
-        /* Header Navigation */
+        /* Top Navigation Bar */
         header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border);
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
             z-index: 1000;
-            border-bottom: 1px solid var(--border);
         }
         .nav-container {
             display: flex;
@@ -102,25 +89,25 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-dark);
             text-decoration: none;
         }
         .logo-badge {
-            width: 42px;
-            height: 42px;
+            width: 40px;
+            height: 40px;
             background: linear-gradient(135deg, var(--primary), var(--primary-accent));
             color: white;
-            border-radius: 12px;
+            border-radius: 10px;
             display: grid;
             place-items: center;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
         .nav-links {
             display: flex;
-            gap: 1.8rem;
+            gap: 2rem;
             list-style: none;
             align-items: center;
         }
@@ -135,145 +122,187 @@
         .nav-links a:hover {
             color: var(--primary-accent);
         }
-        .btn {
-            padding: 0.8rem 1.6rem;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: var(--transition);
-            border: none;
+        .user-icon {
+            font-size: 1.2rem;
+            color: var(--text-dark);
             cursor: pointer;
-            font-size: 0.95rem;
         }
-        .btn-primary {
-            background: var(--primary-accent);
+
+        /* Hero Header Section */
+        .hero-main {
+            padding: 4.5rem 5% 3.5rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero-main h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+        .hero-main p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        /* Blue Mid Banner Section */
+        .blue-banner {
+            background-color: var(--primary-accent);
             color: #ffffff;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+            padding: 5rem 5%;
+            text-align: center;
         }
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            background: var(--primary);
-            box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
+        .blue-banner-container {
+            max-width: 850px;
+            margin: 0 auto;
         }
-        .btn-outline {
-            border: 2px solid var(--primary-accent);
-            color: var(--primary-accent);
-            background: transparent;
-        }
-        .btn-outline:hover {
-            background: var(--primary-accent);
+        .blue-banner h2 {
             color: #ffffff;
+            font-size: 2.4rem;
+            margin-bottom: 1.8rem;
+            font-weight: 700;
         }
-        /* Hero Section */
-        .hero {
-            padding: 5rem 5% 6rem;
-            background: linear-gradient(180deg, var(--blue-light) 0%, #f8fafc 100%);
+        .blue-banner p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.95);
         }
-        .hero-container {
-            max-width: 1300px;
+
+        /* Content / Image Row Section */
+        .content-section {
+            padding: 5rem 5%;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
-        .hero-text h1 {
-            font-size: 3.5rem;
-            line-height: 1.15;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-        }
-        .hero-text p {
-            font-size: 1.15rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-        .hero-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-        .hero-gallery img {
+        .content-image img {
             width: 100%;
-            height: 220px;
+            height: 350px;
             object-fit: cover;
-            border-radius: var(--radius);
+            border-radius: 8px;
             box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            background-color: #cbd5e1;
         }
-        .hero-gallery img:hover {
-            transform: scale(1.02);
-            box-shadow: var(--shadow-lg);
+        .content-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            color: var(--text-dark);
         }
-        /* Verification Card */
-        .notice-card {
-            max-width: 1300px;
-            margin: -2rem auto 4rem;
-            background: var(--card-bg);
-            border-left: 5px solid var(--primary-accent);
-            padding: 1.5rem 2rem;
-            border-radius: var(--radius);
-            box-shadow: var(--shadow-lg);
-        }
-        .notice-card h3 {
-            font-size: 1.1rem;
-            color: var(--primary-accent);
-            margin-bottom: 0.3rem;
-        }
-        /* Section Layouts */
-        .section {
-            padding: 5rem 5%;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        .section-header h2 {
-            font-size: 2.5rem;
+        .content-text p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.8;
             margin-bottom: 1rem;
         }
-        .section-header p {
-            color: var(--text-muted);
-            max-width: 650px;
+
+        /* Dark Bottom Banner Section */
+        .dark-banner {
+            background-color: var(--secondary);
+            color: #cbd5e1;
+            padding: 5rem 5%;
+            text-align: center;
+        }
+        .dark-banner-container {
+            max-width: 850px;
             margin: 0 auto;
-            font-size: 1.1rem;
         }
-        .grid-3 {
+        .dark-banner h2 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .dark-banner p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+        .action-prompt {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .action-prompt a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #ffffff;
+            color: var(--text-main);
+            padding: 5rem 5% 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .footer-layout {
+            max-width: 1200px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
         }
-        .card {
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border);
+        .footer-col h4 {
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.9rem;
+        }
+        .footer-col ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
             transition: var(--transition);
+            cursor: pointer;
+            font-size: 0.95rem;
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
+        .footer-col ul li a:hover {
+            color: var(--primary-accent);
         }
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            background-color: var(--blue-light);
-            display: block;
+        .org-details-list li {
+            margin-bottom: 0.7rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
-        .card-body {
-            padding: 2rem;
+        .org-details-list a {
+            color: var(--primary-accent);
+            text-decoration: none;
         }
-        .card-body h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.8rem;
+        .footer-bottom-copy {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
         }
-        /* Contact Details Layout */
+
+        /* Contact Page Section */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
         .contact-box {
             background: #ffffff;
             padding: 2.5rem;
@@ -315,62 +344,20 @@
             font-family: inherit;
             font-size: 1rem;
         }
-        /* Footer */
-        footer {
-            background: var(--secondary);
-            color: #cbd5e1;
-            padding: 5rem 5% 2rem;
-        }
-        .footer-grid {
-            max-width: 1300px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr repeat(3, 1fr);
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-        .footer-brand h3 {
+        .btn-primary {
+            background: var(--primary-accent);
             color: #ffffff;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        .footer-brand p {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        .footer-col h4 {
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-        .footer-col ul {
-            list-style: none;
-        }
-        .footer-col ul li {
-            margin-bottom: 0.8rem;
-        }
-        .footer-col ul li a {
-            color: #cbd5e1;
-            text-decoration: none;
-            transition: var(--transition);
+            padding: 0.8rem 1.6rem;
+            border-radius: 50px;
+            font-weight: 600;
+            border: none;
             cursor: pointer;
+            transition: var(--transition);
         }
-        .footer-col ul li a:hover {
-            color: #ffffff;
+        .btn-primary:hover {
+            background: var(--primary);
         }
-        .footer-bottom {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            font-size: 0.9rem;
-        }
+
         /* Modals */
         .modal-page {
             display: none;
@@ -407,11 +394,6 @@
             cursor: pointer;
             display: grid;
             place-items: center;
-            transition: var(--transition);
-        }
-        .modal-close:hover {
-            background: var(--primary-accent);
-            color: white;
         }
         .policy-meta {
             font-size: 0.9rem;
@@ -430,8 +412,9 @@
         .policy-content ul {
             padding-left: 1.5rem;
         }
+
         @media (max-width: 900px) {
-            .hero-container, .footer-grid {
+            .content-section, .contact-grid, .footer-layout {
                 grid-template-columns: 1fr;
             }
             .nav-links {
@@ -441,12 +424,8 @@
     </style>
 </head>
 <body>
-    <!-- Compliance Banner -->
-    <div class="top-banner">
-        <strong>Official Notice:</strong> <code>privilegeddescendants.bond</code> is an officially recognized website domain operated by <strong>Privileged Descendants</strong> (EIN: 81-1764330).
-    </div>
 
-    <!-- Navigation -->
+    <!-- Header Navigation -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
@@ -454,107 +433,66 @@
                 Privileged Descendants
             </a>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#impact">Our Impact</a></li>
-                <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
-                <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
+            <div class="user-icon" onclick="openModal('privacyModal')" title="Account / Info">👤</div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1>Preserving Heritage. Empowering Generations.</h1>
-                <p>Privileged Descendants is a registered 501(c)(3) nonprofit dedicated to heritage education, cultural preservation, and empowering communities through legacy support from our headquarters at 216 Gipple St, Bloomsburg PA.</p>
-                <div style="display: flex; gap: 1rem;">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#contact" class="btn btn-outline">Get Involved</a>
-                </div>
-            </div>
-            <div class="hero-gallery">
-                <img src="https://picsum.photos/id/338/600/400" alt="Cultural Preservation">
-                <img src="https://picsum.photos/id/532/600/400" alt="Community Heritage">
-                <img src="https://picsum.photos/id/453/600/400" alt="Educational Workshops">
-                <img src="https://picsum.photos/id/1059/600/400" alt="Community Gathering">
+    <section id="home" class="hero-main">
+        <h1>Bridging the Past, Empowering the Future of Our Community</h1>
+        <p>Welcome to the official home of Privileged Descendants. We are a dedicated 501(c)(3) nonprofit organization uniting generations of descendants, local leaders, and community partners to foster lifelong connections, drive meaningful educational advancement, and create lasting positive change right here in Bloomsburg, Pennsylvania, and beyond.</p>
+    </section>
+
+    <!-- Blue Mid Banner Section -->
+    <section class="blue-banner">
+        <div class="blue-banner-container">
+            <h2>Our Enduring Commitment to Excellence and Service</h2>
+            <p>At Privileged Descendants, we believe that the bonds forged through our formative history and heritage carry the profound potential to transform communities long after generation day. Operating from our headquarters at 216 Gipple St, Bloomsburg PA 17815, our organization stands as a pillar of support, mentorship, and collective action. We recognize that true progress happens when individuals come together with a shared purpose, pooling their diverse talents, professional experiences, and personal passions to uplift those around them. Through structured outreach programs, community gatherings, and collaborative partnerships, we strive to keep our network vibrant, engaged, and actively invested in the well-being of our society.</p>
+        </div>
+    </section>
+
+    <!-- Image & Text Section -->
+    <section class="content-section">
+        <div class="content-image">
+            <img src="https://picsum.photos/id/1025/600/400" alt="Community Gathering">
+        </div>
+        <div class="content-text">
+            <h3>Building Stronger Communities Together</h3>
+            <p>True community resilience is built upon the foundation of active participation and mutual care. Privileged Descendants actively collaborates with local organizations, civic leaders, and regional volunteers to address pressing community needs.</p>
+            <p>Whether we are coordinating support services, sponsoring educational workshops, or hosting community-building events, our focus remains firmly on creating an environment where everyone has the opportunity to thrive. We believe that every member of our network possesses unique gifts to share, and by uniting these talents, we can accomplish remarkable things for our hometown and the wider world.</p>
+        </div>
+    </section>
+
+    <!-- Dark Bottom Banner Section -->
+    <section class="dark-banner">
+        <div class="dark-banner-container">
+            <h2>Be Part of Something Extraordinary</h2>
+            <p>Your journey with us continues today. Whether you are looking to reconnect with peers, mentor the next generation of leaders, or support our charitable outreach programs, there is a place for you in the Privileged Descendants family. Together, we can honor our history while actively building a brighter, more connected future.</p>
+            <div class="action-prompt">
+                <strong>Action Prompt:</strong> Reach out to our administrative team today at <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a> to update your profile, inquire about upcoming membership opportunities, or learn how you can support our tax-deductible 501(c)(3) community initiatives.
             </div>
         </div>
     </section>
 
-    <!-- Organization Verification Notice Box -->
-    <div style="padding: 0 5%;">
-        <div class="notice-card">
-            <h3>Organization Verification & Official Domain</h3>
-            <p>
-                <strong>Privileged Descendants</strong> (EIN: 81-1764330) formally confirms that <strong>privilegeddescendants.bond</strong> is our primary organizational website and communications domain. All correspondence is managed under <code>query@privilegeddescendants.bond</code>.
-            </p>
-        </div>
-    </div>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="section-header">
-            <h2>About Privileged Descendants</h2>
-            <p>Bridging past heritage with future community enrichment through comprehensive education, documentation, and historical outreach.</p>
-        </div>
-        <div class="grid-3">
-            <div class="card">
-                <img src="https://picsum.photos/id/517/600/400" alt="Our Mission">
-                <div class="card-body">
-                    <h3>Our Mission</h3>
-                    <p>To preserve historical legacies and provide comprehensive educational resources that empower communities to honor their roots, understand historical context, and build resilient futures for upcoming generations.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/548/600/400" alt="Our Vision">
-                <div class="card-body">
-                    <h3>Our Vision</h3>
-                    <p>A thriving, connected society where historical continuity, cultural education, and archival preservation serve as foundational pillars for lifelong learning and community advancement.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/id/529/600/400" alt="Core Values">
-                <div class="card-body">
-                    <h3>Core Values</h3>
-                    <p>Uncompromising cultural stewardship, educational equity across all demographic lines, transparent nonprofit governance, and deep respect for community history, diversity, and tradition.</p>
-                </div>
-            </div>
+    <!-- Additional Impact Section -->
+    <section class="section" style="text-align: center; background: var(--light-bg); max-width: 100%;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Strengthening Our Neighborhoods Through Unity</h2>
+            <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem; font-size: 1.05rem;">A community thrives when its members refuse to remain passive observers. Privileged Descendants actively partners with regional volunteers, civic organizations, and local leaders to address grassroots needs and support charitable causes.</p>
         </div>
     </section>
 
-    <!-- Impact Section -->
-    <section id="impact" class="section" style="background: #ffffff; max-width: 100%;">
-        <div style="max-width: 1300px; margin: 0 auto;">
-            <div class="section-header">
-                <h2>Our Community Impact</h2>
-                <p>Measurable milestones achieved through dedication, educational outreach, and continuous community partnership.</p>
-            </div>
-            <div class="grid-3">
-                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
-                    <h3 style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 0.5rem;">350+</h3>
-                    <p><strong>Students Reached</strong><br>Actively participating in heritage workshops and educational seminars.</p>
-                </div>
-                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
-                    <h3 style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;">50+</h3>
-                    <p><strong>Oral Histories</strong><br>Archived, digitized, and preserved securely for future generations.</p>
-                </div>
-                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
-                    <h3 style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 0.5rem;">100%</h3>
-                    <p><strong>Transparency</strong><br>Fully compliant 501(c)(3) operations dedicated to public benefit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Page Section -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="section-header">
+        <div style="text-align: center; margin-bottom: 4rem;">
             <h2>Contact Privileged Descendants</h2>
-            <p>Reach out to our administrative team for inquiries, collaboration opportunities, or official organizational verification.</p>
+            <p style="color: var(--text-muted);">Reach out to our administrative team for inquiries or support.</p>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+        <div class="contact-grid">
             <div class="contact-box">
                 <h3>Contact Information</h3>
                 <div class="contact-detail">
@@ -590,7 +528,7 @@
                     <div class="form-group">
                         <textarea rows="5" placeholder="How can Privileged Descendants assist you?" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -598,46 +536,35 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>Privileged Descendants</h3>
-                <p>Privileged Descendants is a registered 501(c)(3) non-profit organization dedicated to heritage education, historical documentation, and community empowerment.</p>
-                <p><strong>EIN:</strong> 81-1764330<br><strong>Domain:</strong> privilegeddescendants.bond</p>
-            </div>
+        <div class="footer-layout">
             <div class="footer-col">
-                <h4>Navigation</h4>
+                <h4>Information</h4>
                 <ul>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#impact">Our Impact</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Legal & Policies</h4>
-                <ul>
                     <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
                     <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
                     <li><a onclick="openModal('nondiscrimModal')">Nondiscrimination Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact Details</h4>
-                <ul>
-                    <li>Privileged Descendants</li>
-                    <li>216 Gipple St</li>
-                    <li>Bloomsburg PA 17815, United States</li>
-                    <li><a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a></li>
+                <h4>PRIVILEGED DESCENDANTS</h4>
+                <ul class="org-details-list">
+                    <li><strong>EIN:</strong> 81-1764330</li>
+                    <li><strong>Address:</strong><br>216 Gipple St<br>Bloomsburg PA 17815<br>United States</li>
+                    <li><strong>Email:</strong> <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a></li>
+                    <li><strong>Domain:</strong> <code>privilegeddescendants.bond</code></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div>&copy; 2026 Privileged Descendants. All rights reserved.</div>
-            <div><code>privilegeddescendants.bond</code> is an official domain of Privileged Descendants (EIN: 81-1764330)</div>
+        <div class="footer-bottom-copy">
+            &copy; 2026 Privileged Descendants. All rights reserved. <code>privilegeddescendants.bond</code> is an official domain.
         </div>
     </footer>
 
     <!-- POLICY MODALS -->
-    <!-- Modal 1: Privacy Policy -->
+    <!-- Privacy Policy Modal -->
     <div id="privacyModal" class="modal-page">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
@@ -648,39 +575,26 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Privileged Descendants ("we," "our," or "us") operates the website <code>privilegeddescendants.bond</code>. We are deeply committed to protecting the privacy, security, and confidentiality of our visitors, participants, donors, and community supporters.</p>
-                
+                <p>Privileged Descendants ("we," "our," or "us") operates the website <code>privilegeddescendants.bond</code>. We are deeply committed to protecting the privacy and confidentiality of our visitors, participants, and supporters.</p>
                 <h3>1. Information We Collect</h3>
-                <p>We collect personal information that you voluntarily provide to us when communicating with our team, registering for educational workshops, or interacting with our nonprofit organization. This includes:</p>
+                <p>We collect personal information that you voluntarily provide to us when contacting us, requesting assistance, or interacting with our organization. This includes:</p>
                 <ul>
-                    <li><strong>Contact Details:</strong> Your full name, email address (such as <code>query@privilegeddescendants.bond</code>), telephone number, and physical mailing address.</li>
-                    <li><strong>Inquiry Data:</strong> Information or questions submitted through our contact forms or direct email correspondences.</li>
-                    <li><strong>Technical Data:</strong> Non-identifying IP addresses, browser types, device information, and access logs collected automatically to safeguard website security and optimize user experience.</li>
+                    <li><strong>Contact Details:</strong> Your name, email address (e.g., <code>query@privilegeddescendants.bond</code>), phone number, and physical mailing address.</li>
+                    <li><strong>Technical Data:</strong> Non-identifying IP addresses, browser types, and access logs collected automatically to preserve website security.</li>
                 </ul>
-
                 <h3>2. How We Use Your Information</h3>
-                <p>Privileged Descendants utilizes collected information strictly for legitimate organizational and charitable purposes:</p>
+                <p>Privileged Descendants uses collected information strictly for legitimate organizational purposes:</p>
                 <ul>
-                    <li>To respond directly to inquiries, support requests, and community feedback.</li>
-                    <li>To coordinate heritage education sessions, archival initiatives, and community programs.</li>
-                    <li>To maintain accurate administrative files and comply fully with federal 501(c)(3) tax-reporting and regulatory standards.</li>
+                    <li>To communicate directly regarding program updates, community news, or events.</li>
+                    <li>To comply with federal 501(c)(3) compliance and tax-reporting regulations.</li>
                 </ul>
-
-                <h3>3. Confidentiality and Data Protection</h3>
-                <p>We enforce rigorous administrative and technical safeguards to protect your data. <strong>Privileged Descendants does not sell, rent, lease, or trade personal data or donor information to any third parties under any circumstances.</strong> Information is only shared with trusted service providers bound by strict confidentiality obligations who directly support our digital and operational infrastructure.</p>
-
-                <h3>4. Policy Updates and Contact</h3>
-                <p>We may update this Privacy Policy periodically to reflect operational improvements or regulatory updates. If you have any questions regarding this policy or wish to review or remove your personal data, please contact our administrative team at:</p>
-                <p>
-                    <strong>Privileged Descendants</strong><br>
-                    216 Gipple St, Bloomsburg PA 17815, United States<br>
-                    Email: <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a>
-                </p>
+                <h3>3. Confidentiality</h3>
+                <p><strong>Privileged Descendants does not sell, rent, lease, or trade personal data or donor information to any third parties under any circumstances.</strong></p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 2: Terms of Use -->
+    <!-- Terms of Use Modal -->
     <div id="termsModal" class="modal-page">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
@@ -691,27 +605,16 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Welcome to <code>privilegeddescendants.bond</code>. By accessing, browsing, or utilizing this website, you explicitly agree to be bound by these full Terms of Use and all applicable local, state, and federal laws and regulations.</p>
-
+                <p>Welcome to <code>privilegeddescendants.bond</code>. By accessing or using this website, you agree to be bound by these full Terms of Use and all applicable laws and regulations.</p>
                 <h3>1. Non-Profit Status and Purpose</h3>
-                <p>Privileged Descendants is a duly registered 501(c)(3) non-profit organization operating under Employer Identification Number (EIN) 81-1764330, with our principal office located at 216 Gipple St, Bloomsburg PA 17815. This website is established and operated exclusively for charitable, educational, historical preservation, and community assistance purposes.</p>
-
-                <h3>2. Acceptable Use Policy</h3>
-                <p>Users agree to utilize this website strictly for lawful, non-commercial purposes. You agree not to submit fraudulent inquiries, engage in automated data scraping, attempt unauthorized access to our digital systems, or misuse official contact channels (such as <code>query@privilegeddescendants.bond</code>) for unsolicited advertising, harassment, or spam.</p>
-
-                <h3>3. Intellectual Property Rights</h3>
-                <p>All text, graphics, logos, images, design elements, and downloadable content featured on <code>privilegeddescendants.bond</code> are the intellectual property of Privileged Descendants or its content contributors and are protected by United States and international copyright laws. Unauthorized reproduction, modification, distribution, or republication of any material without express written consent is strictly prohibited.</p>
-
-                <h3>4. Limitation of Liability</h3>
-                <p>Privileged Descendants provides the information on this website on an "as is" and "as available" basis without warranties of any kind, either express or implied. The organization shall not be held liable for any direct, indirect, incidental, or consequential damages arising out of or in connection with the use of this website or reliance on its content.</p>
-
-                <h3>5. Contact Information</h3>
-                <p>For any questions or concerns regarding these Terms of Use, please reach out via email at <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a> or write to us at 216 Gipple St, Bloomsburg PA 17815.</p>
+                <p>Privileged Descendants is a registered 501(c)(3) non-profit organization operating under Employer Identification Number (EIN) 81-1764330. This website is created and operated solely for non-profit charitable, informational, and community heritage purposes.</p>
+                <h3>2. Acceptable Use</h3>
+                <p>Users agree to use this site strictly for lawful purposes. You agree not to attempt unauthorized system access or use official contacts (such as <code>query@privilegeddescendants.bond</code>) for unauthorized advertising or spam.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 3: Nondiscrimination Policy -->
+    <!-- Nondiscrimination Policy Modal -->
     <div id="nondiscrimModal" class="modal-page">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('nondiscrimModal')">&times;</button>
@@ -722,29 +625,9 @@
                 <strong>Effective Date:</strong> January 1, 2026
             </div>
             <div class="policy-content">
-                <p>Privileged Descendants champions a strict policy of equal opportunity, inclusion, and nondiscrimination across all of our programs, community outreach efforts, archival services, events, volunteer selections, and staffing decisions.</p>
-
-                <h3>1. Equal Access and Opportunity</h3>
-                <p>In accordance with federal 501(c)(3) guidelines and our core values, Privileged Descendants does not discriminate, exclude, or treat individuals differently on the basis of race, color, religion, creed, gender, gender expression, age, national origin or ancestry, disability, marital status, sexual orientation, military or veteran status, or any other legally protected status in any of our operations or activities.</p>
-
-                <h3>2. Scope of Policy</h3>
-                <p>This steadfast nondiscrimination commitment applies universally to:</p>
-                <ul>
-                    <li>The delivery and availability of educational workshops, historical resources, and archival databases.</li>
-                    <li>The participation in community forums, public events, and legacy initiatives.</li>
-                    <li>The recruitment, hiring, retention, and professional development of staff members, board leadership, and volunteers.</li>
-                </ul>
-
-                <h3>3. Reporting Concerns and Grievances</h3>
-                <p>Any individual who believes they have encountered discrimination, exclusion, or unequal treatment in connection with Privileged Descendants programs or operations is strongly encouraged to report the incident immediately. We pledge to promptly investigate and address all reported concerns in a confidential manner.</p>
-
-                <h3>4. Inquiries</h3>
-                <p>To submit feedback or inquiries regarding our nondiscrimination practices, please contact our compliance coordinator:</p>
-                <p>
-                    <strong>Privileged Descendants</strong><br>
-                    216 Gipple St, Bloomsburg PA 17815, United States<br>
-                    Email: <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a>
-                </p>
+                <p>Privileged Descendants is committed to a policy of equal opportunity and nondiscrimination in all its programs, services, activities, and staffing.</p>
+                <h3>1. Equal Access</h3>
+                <p>We do not discriminate on the basis of race, color, religion, gender, gender expression, age, national origin, disability, marital status, sexual orientation, or military status in any of our activities or operations.</p>
             </div>
         </div>
     </div>
