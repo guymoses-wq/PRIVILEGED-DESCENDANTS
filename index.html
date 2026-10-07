@@ -695,4 +695,104 @@
             <div class="footer-col">
                 <h4>Legal & Policies</h4>
                 <ul>
-                    <li><a onclick="openModal('privacyModal')
+                    <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                    <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
+                    <li><a onclick="openModal('nondiscrimModal')">Nondiscrimination Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Details</h4>
+                <ul>
+                    <li>Privileged Descendants</li>
+                    <li>216 Gipple St</li>
+                    <li>Bloomsburg PA 17815, United States</li>
+                    <li><a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>&copy; 2026 Privileged Descendants. All rights reserved.</div>
+            <div><code>privilegeddescendants.bond</code> is an official domain of Privileged Descendants (EIN: 81-1764330)</div>
+        </div>
+    </footer>
+
+    <!-- POLICY MODALS -->
+    <!-- Modal 1: Privacy Policy -->
+    <div id="privacyModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Privacy Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> Privileged Descendants (EIN: 81-1764330) | 
+                <strong>Domain:</strong> privilegeddescendants.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Privileged Descendants ("we," "our," or "us") operates the website <code>privilegeddescendants.bond</code>. We are committed to protecting the privacy and confidentiality of our visitors, participants, and supporters.</p>
+                <h3>1. Information We Collect</h3>
+                <p>We collect personal information that you voluntarily provide to us when contacting us or participating in our programs. This includes:</p>
+                <ul>
+                    <li><strong>Contact Details:</strong> Your name, email address (e.g., <code>query@privilegeddescendants.bond</code>), and physical address.</li>
+                    <li><strong>Technical Data:</strong> Non-identifying IP addresses and browser logs collected to preserve website security.</li>
+                </ul>
+                <h3>2. How We Use Your Information</h3>
+                <p>We use collected information strictly for legitimate organizational purposes, including responding to inquiries, coordinating educational programs, and complying with 501(c)(3) tax-reporting regulations.</p>
+                <h3>3. Confidentiality</h3>
+                <p><strong>Privileged Descendants does not sell, rent, or trade personal data to third parties under any circumstances.</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Terms of Use -->
+    <div id="termsModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Full Terms of Use</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> Privileged Descendants (EIN: 81-1764330) | 
+                <strong>Domain:</strong> privilegeddescendants.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Welcome to <code>privilegeddescendants.bond</code>. By accessing or using this website, you agree to be bound by these Terms of Use.</p>
+                <h3>1. Non-Profit Purpose</h3>
+                <p>Privileged Descendants is a registered 501(c)(3) non-profit organization operating under EIN 81-1764330. This website is created solely for charitable, educational, and community heritage purposes.</p>
+                <h3>2. Acceptable Use</h3>
+                <p>Users agree to use this site strictly for lawful purposes and not to misuse official contacts such as <code>query@privilegeddescendants.bond</code>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Nondiscrimination Policy -->
+    <div id="nondiscrimModal" class="modal-page">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('nondiscrimModal')">&times;</button>
+            <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Nondiscrimination Policy</h2>
+            <div class="policy-meta">
+                <strong>Organization:</strong> Privileged Descendants (EIN: 81-1764330) | 
+                <strong>Domain:</strong> privilegeddescendants.bond | 
+                <strong>Effective Date:</strong> January 1, 2026
+            </div>
+            <div class="policy-content">
+                <p>Privileged Descendants is committed to a policy of equal opportunity and nondiscrimination in all its programs, services, activities, and staffing.</p>
+                <h3>1. Equal Access</h3>
+                <p>We do not discriminate on the basis of race, color, religion, gender, gender expression, age, national origin, disability, marital status, sexual orientation, or military status in any of our activities or operations.</p>
+                <h3>2. Inclusive Community</h3>
+                <p>These activities include, but are not limited to, the provision of educational grants, community outreach programs, archival access, and selection of volunteers and staff.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal JavaScript -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
