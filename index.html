@@ -1,1 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privileged Descendants | Preserving Heritage & Empowering Communities</title>
+    <meta name="description" content="Privileged Descendants (EIN: 81-1764330) champions heritage education, community empowerment, and historical preservation. Official domain: privilegeddescendants.bond.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18225770213"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18225770213');
+    </script>
+    <!-- Google Ads Conversion Snippet -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18225770213/5BZ0CPSugP0cEOXd3PJD',
+            'value': 1.0,
+            'currency': 'USD',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-accent: #2563eb;
+            --blue-light: #eff6ff;
+            --secondary: #0f172a;
+            --accent-gold: #d97706;
+            --light-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-main);
+            background-color: var(--light-bg);
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+        /* Top Compliance Banner */
+        .top-banner {
+            background-color: var(--secondary);
+            color: #f1f5f9;
+            font-size: 0.85rem;
+            padding: 10px 5%;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .top-banner strong {
+            color: #60a5fa;
+        }
+        /* Header Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .logo-badge {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-accent));
+            color: white;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .nav-links a:hover {
+            color: var(--primary-accent);
+        }
+        .btn {
+            padding: 0.8rem 1.6rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: var(--primary-accent);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--primary);
+            box-shadow: 0 6px 20px rgba(30, 58, 138, 0.4);
+        }
+        .btn-outline {
+            border: 2px solid var(--primary-accent);
+            color: var(--primary-accent);
+            background: transparent;
+        }
+        .btn-outline:hover {
+            background: var(--primary-accent);
+            color: #ffffff;
+        }
+        /* Hero Section */
+        .hero {
+            padding: 5rem 5% 6rem;
+            background: linear-gradient(180deg, var(--blue-light) 0%, #f8fafc 100%);
+        }
+        .hero-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .hero-text h1 {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        .hero-text p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+        .hero-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .hero-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            background-color: #cbd5e1;
+        }
+        .hero-gallery img:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-lg);
+        }
+        /* Verification Card */
+        .notice-card {
+            max-width: 1300px;
+            margin: -2rem auto 4rem;
+            background: var(--card-bg);
+            border-left: 5px solid var(--primary-accent);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+        }
+        .notice-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-accent);
+            margin-bottom: 0.3rem;
+        }
+        /* Section Layouts */
+        .section {
+            padding: 5rem 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: var(--blue-light);
+            display: block;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-body h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+        /* Pillars Grid */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .pillar-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        .pillar-item h4 {
+            color: var(--primary-accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        /* Contact Details Layout */
+        .contact-box {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        .contact-box h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .contact-detail {
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-detail span {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .contact-detail strong, .contact-detail a {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: #cbd5e1;
+            padding: 5rem 5% 2rem;
+        }
+        .footer-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        .footer-brand h3 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .footer-col h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+        .footer-col ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .footer-col ul li a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+        }
+        /* Modals */
+        .modal-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 3rem 1rem;
+        }
+        .modal-content {
+            background: #ffffff;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: var(--light-bg);
+            border: 1px solid var(--border);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            transition: var(--transition);
+        }
+        .modal-close:hover {
+            background: var(--primary-accent);
+            color: white;
+        }
+        .policy-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        .policy-content h3 {
+            font-size: 1.3rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+        .policy-content p, .policy-content ul {
+            margin-bottom: 1rem;
+        }
+        .policy-content ul {
+            padding-left: 1.5rem;
+        }
+        @media (max-width: 900px) {
+            .hero-container, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Compliance Banner -->
+    <div class="top-banner">
+        <strong>Official Notice:</strong> <code>privilegeddescendants.bond</code> is an officially recognized website domain operated by <strong>Privileged Descendants</strong> (EIN: 81-1764330).
+    </div>
 
+    <!-- Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-badge">P</div>
+                Privileged Descendants
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#impact">Our Impact</a></li>
+                <li><a onclick="openModal('privacyModal')">Privacy Policy</a></li>
+                <li><a onclick="openModal('termsModal')">Terms of Use</a></li>
+                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Preserving Heritage. Empowering Generations.</h1>
+                <p>Privileged Descendants is a registered 501(c)(3) nonprofit dedicated to heritage education, cultural preservation, and empowering communities through legacy support.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#programs" class="btn btn-primary">Explore Programs</a>
+                    <a href="#contact" class="btn btn-outline">Get Involved</a>
+                </div>
+            </div>
+            <div class="hero-gallery">
+                <img src="https://picsum.photos/id/338/600/400" alt="Cultural Preservation">
+                <img src="https://picsum.photos/id/532/600/400" alt="Community Heritage">
+                <img src="https://picsum.photos/id/453/600/400" alt="Educational Workshops">
+                <img src="https://picsum.photos/id/1059/600/400" alt="Community Gathering">
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Verification Notice Box -->
+    <div style="padding: 0 5%;">
+        <div class="notice-card">
+            <h3>Organization Verification & Official Domain</h3>
+            <p>
+                <strong>Privileged Descendants</strong> (EIN: 81-1764330) formally confirms that <strong>privilegeddescendants.bond</strong> is our primary organizational website and communications domain. All correspondence is managed under <code>query@privilegeddescendants.bond</code>.
+            </p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>About Privileged Descendants</h2>
+            <p>Bridging past heritage with future community enrichment through education and outreach.</p>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <img src="https://picsum.photos/id/517/600/400" alt="Our Mission">
+                <div class="card-body">
+                    <h3>Our Mission</h3>
+                    <p>To preserve historical legacies and provide educational resources that empower communities to honor their roots and build resilient futures.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/548/600/400" alt="Our Vision">
+                <div class="card-body">
+                    <h3>Our Vision</h3>
+                    <p>A thriving society where historical continuity and cultural education serve as foundational pillars for community advancement.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/id/529/600/400" alt="Core Values">
+                <div class="card-body">
+                    <h3>Core Values</h3>
+                    <p>Cultural stewardship, educational equity, transparent governance, and deep respect for community history and tradition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section" style="background: #ffffff; max-width: 100%;">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <div class="section-header">
+                <h2>Our Core Programs</h2>
+                <p>Targeted initiatives designed to educate, preserve, and uplift.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/366/600/400" alt="Heritage Education">
+                    <div class="card-body">
+                        <h3>Heritage Education Grants</h3>
+                        <p>Providing workshops, archives access, and scholarship opportunities focused on historical research and cultural preservation.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/449/600/400" alt="Community Outreach">
+                    <div class="card-body">
+                        <h3>Community Outreach & Archives</h3>
+                        <p>Documenting oral histories, safeguarding cultural artifacts, and maintaining public resources for community members.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/399/600/400" alt="Leadership & Legacy">
+                    <div class="card-body">
+                        <h3>Legacy & Leadership Initiative</h3>
+                        <p>Mentoring the next generation of community leaders through structured guidance and history-centered training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Approach -->
+    <section id="approach" class="section">
+        <div class="section-header">
+            <h2>Our Operational Approach</h2>
+            <p>How we ensure accurate historical documentation and meaningful community engagement.</p>
+        </div>
+        <div class="pillars-grid">
+            <div class="pillar-item">
+                <h4>1. Authentic Research</h4>
+                <p>We work alongside historians and community elders to verify and record authentic historical accounts.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>2. Accessible Archives</h4>
+                <p>We make educational materials and historical records easily accessible to students and researchers.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>3. Collaborative Networks</h4>
+                <p>We partner with local libraries, historical societies, and educational institutions to amplify our reach.</p>
+            </div>
+            <div class="pillar-item">
+                <h4>4. Fiduciary Excellence</h4>
+                <p>Operating strictly under 501(c)(3) standards, ensuring all contributions directly support our mission.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section" style="background: #ffffff; max-width: 100%;">
+        <div style="max-width: 1300px; margin: 0 auto;">
+            <div class="section-header">
+                <h2>Our Community Impact</h2>
+                <p>Measurable milestones achieved through dedication and community partnership.</p>
+            </div>
+            <div class="grid-3">
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--primary-accent); margin-bottom: 0.5rem;">350+</h3>
+                    <p><strong>Students Reached</strong><br>Participating in heritage workshops.</p>
+                </div>
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem;">50+</h3>
+                    <p><strong>Oral Histories</strong><br>Archived and preserved securely.</p>
+                </div>
+                <div style="text-align: center; padding: 2.5rem; background: var(--light-bg); border-radius: var(--radius); border: 1px solid var(--border);">
+                    <h3 style="font-size: 3rem; color: var(--accent-gold); margin-bottom: 0.5rem;">100%</h3>
+                    <p><strong>Transparency</strong><br>Compliant 501(c)(3) operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page Section -->
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Contact Privileged Descendants</h2>
+            <p>Reach out to our team for program inquiries, support, or verification.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <div class="contact-detail">
+                    <span>Legal Entity Name</span>
+                    <strong>Privileged Descendants</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Federal Tax ID (EIN)</span>
+                    <strong>81-1764330</strong>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Email Address</span>
+                    <a href="mailto:query@privilegeddescendants.bond">query@privilegeddescendants.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Official Domain</span>
+                    <a href="https://privilegeddescendants.bond">privilegeddescendants.bond</a>
+                </div>
+                <div class="contact-detail">
+                    <span>Mailing Address</span>
+                    <strong>216 Gipple St<br>Bloomsburg PA 17815, United States</strong>
+                </div>
+            </div>
+            <div class="contact-box">
+                <h3>Send Us A Message</h3>
+                <form class="contact-form" onsubmit="gtag_report_conversion(); event.preventDefault(); alert('Message sent successfully to query@privilegeddescendants.bond!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="How can Privileged Descendants assist you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Privileged Descendants</h3>
+                <p>Privileged Descendants is a registered 501(c)(3) non-profit organization dedicated to heritage education and community empowerment.</p>
+                <p><strong>EIN:</strong> 81-1764330<br><strong>Domain:</strong> privilegeddescendants.bond</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Our Programs</a></li>
+                    <li><a href="#approach">Our Approach</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal & Policies</h4>
+                <ul>
+                    <li><a onclick="openModal('privacyModal')
